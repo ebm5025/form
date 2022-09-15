@@ -1,0 +1,40 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+img.bg {
+    position:absolute;
+}
+.left-art {
+    position: relative;;
+}
+.banner {
+    background-color: rgba(0,0,0,.2);
+    position: absolute;
+    top:30%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    color: white;
+}
+.banner img {
+    display: inline;
+    height: 100px;
+}
+.left-art {
+    grid-column: 1 / 1;
+    grid-row: 1 / span 3
+}
+.info {
+    grid-column: 2 / 2;
+    grid-row: 1;
+}
+.entry {
+    grid-column: 2 / 2;
+    grid-row: 2;
+}
+.submit {
+    grid-column: 2 / 2;
+    grid-row: 3;
+}
