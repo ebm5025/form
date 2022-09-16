@@ -10,20 +10,34 @@
 <body>
     <div class="container">
         <section class="left-art">
-            <img class="bg" src="bg.avif" alt="Ocean background"/>
-            <span class="banner">
+            
+            <div class="banner">
                 <img src="odin-lined.png" alt="Odin"/>
                 ODIN
-            </span>
+            </div>
         </section>
         <section class="info">Real fake forms at the Fake Form Emformium!!</section>
-        <form action="" method="post">
-            <section class="entry">
-                <button type="submit">Create Account</button>
-                <div><span>Already have an account?<a href="#">Log in</a></span></div>
-            </section>
-            <section class="submit"></section>
-        </form>
+        <section class="form">
+            <form action="" method="post">
+                <section class="entry">
+                    <span>Let's do this</span>
+                    <div class="fields">
+                        <div class="form-field"><label for="first-name">First name</label><input type="text" required name="first-name" id="first-name"></div>
+                        <div class="form-field"><label for="last-name">Last name</label><input type="text" required name="last-name" id="last-name"></div>
+                        <div class="form-field"><label for="email">email</label><input type="email" name="email" required id="email"></div>
+                        <div class="form-field"><label for="phone">Phone Number</label><input type="text" required name="phone" id="phone"></div>
+                        <div class="form-field"><label for="password">Password</label><input type="password" required name="password" id="password"></div>
+                        <div class="form-field"><label for="confirm">Confirm password</label><input type="password" required name="confirm" id="confirm"></div>
+                    </div>
+                </section>
+                <section class="submit">
+                    <button type="submit">Create Account</button>
+                    <div><span>Already have an account? <a href="#">Log in</a></span></div>
+                </section>
+            </form>
+            
+        </section>
+        
     </div>
 </body>
 </html>
